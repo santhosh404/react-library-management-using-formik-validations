@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function BookCard({ book, isHome }) {
     return (
-        <Box maxW="sm" borderWidth="1px" borderRadius="3xl" overflow="hidden" className='bookCard  transform transition duration-500 hover:scale-105 cursor-pointer'>
+        <Box maxW="sm" borderWidth="1px" borderRadius="3xl" overflow="hidden" className='bookCard  transform transition duration-500 hover:scale-[1.03] cursor-pointer'>
             {/* <Image src={book.image} alt={book.title} h="200px" objectFit="cover" /> */}
 
             <Box p="6">

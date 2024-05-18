@@ -15,20 +15,20 @@ export default function Home() {
     return (
         <Container maxW={"1300px"}>
             <div className='flex justify-center items-center gap-5 flex-wrap'>
-                <div className='bg-[lightgray] p-5 rounded-xl w-[300px] flex justify-center flex-col items-center'>
-                    <h1 className='text-[20px] '>Total Active Users</h1>
+                <div className='bg-[lightgray] p-5 rounded-xl w-[250px] flex justify-center flex-col items-center'>
+                    <h1 className='text-[18px] '>Total Active Users</h1>
                     <h1 className='text-[40px] font-[800]'>122</h1>
                 </div>
-                <div className='bg-[lightgray] p-5 rounded-xl w-[300px] flex justify-center flex-col items-center'>
-                    <h1 className='text-[20px] '>Total Authors</h1>
+                <div className='bg-[lightgray] p-5 rounded-xl w-[250px] flex justify-center flex-col items-center'>
+                    <h1 className='text-[18px] '>Total Authors</h1>
                     <h1 className='text-[40px] font-[800]'>{allAuthors?.length}</h1>
                 </div>
-                <div className='bg-[lightgray] p-5 rounded-xl w-[300px] flex justify-center flex-col items-center'>
-                    <h1 className='text-[20px] '>Total Books</h1>
+                <div className='bg-[lightgray] p-5 rounded-xl w-[250px] flex justify-center flex-col items-center'>
+                    <h1 className='text-[18px] '>Total Books</h1>
                     <h1 className='text-[40px] font-[800]'>{allBooks?.length}</h1>
                 </div>
-                <div className='bg-[lightgray] p-5 rounded-xl w-[300px] flex justify-center flex-col items-center'>
-                    <h1 className='text-[20px] '>Total Rented Books</h1>
+                <div className='bg-[lightgray] p-5 rounded-xl w-[250px] flex justify-center flex-col items-center'>
+                    <h1 className='text-[18px] '>Total Rented Books</h1>
                     <h1 className='text-[40px] font-[800]'>90</h1>
                 </div>
             </div>
@@ -78,7 +78,7 @@ export default function Home() {
                             <small>Loading authors</small>
                         </div> :
                             allAuthors?.length === 0 && !loading ? <p>No users exist</p> :
-                                allAuthors?.reverse()?.slice(0, 2)?.map((author, idx) => (
+                                allAuthors?.reverse()?.slice(0, 3)?.map((author, idx) => (
                                     <AuthorCard
                                         key={idx}
                                         author={author}

@@ -23,7 +23,7 @@ export default function AuthorCard({ author, isHome }) {
 
     return (
         <>
-            <Card maxW='md' sx={{ borderRadius: "20px" }} borderRadius="3xl" className='authorCard cursor-pointer transform transition duration-500 hover:scale-105'>
+            <Card maxW='sm' sx={{ borderRadius: "20px" }} borderRadius="3xl" className='authorCard cursor-pointer transform transition duration-500 hover:scale-[1.03]'>
                 <CardHeader>
                     <Flex spacing='4'>
                         <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
@@ -72,6 +72,7 @@ export default function AuthorCard({ author, isHome }) {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     text-align: justify;
+                    font-size: 13px
                 }
             `}</style>
         </>
