@@ -9,7 +9,7 @@ export default function Topbar() {
       <div className='topbar px-10 py-6 flex justify-between' style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" }}>
         <div className='flex gap-2 items-center'>
           <Link to={"/"}>
-            <h1 className='text-[30px] font-[900]'>A-Z Library</h1>
+            <h1 className='text-[30px] font-[900] text-[#1A94DA]'>A-Z Library</h1>
           </Link>
         </div>
 
